@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> I try to create a website .</title>
+</head>
+<style>/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table td {
+    font-size: 1.1em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+</style>
+
+<script>
+// Function to show an alert when a ticket price is clicked
+function showTicketDetails(ticketType, price) {
+    alert(`You have selected the ticket: ${ticketType}. The price is: ${price}`);
+}
+
+// Add event listeners to all table cells
+document.addEventListener('DOMContentLoaded', () => {
+    const cells = document.querySelectorAll('table td');
+    cells.forEach(cell => {
+        cell.addEventListener('click', () => {
+            const ticketType = cell.innerText.split(' ')[0] + ' member';
+            const price = cell.innerText.split(' ')[1];
+            showTicketDetails(ticketType, price);
+        });
+    });
+});
+</script>
+<body>
+    <h1>Booking ticket for maa vaishno devi mandir. </h1>
+    <P><b>fIRSTLY, Jai mata dii to all of you.</b></P>
+    <header>
+        <nav>
+            <li>
+                contact
+            </li> 
+            <li>
+                help
+            </li>
+            <li> 
+                 about
+            </li>  
+        </nav>
+    </header>
+        <main>
+         <caption>type of ticket. [delhi to darbar]</caption>
+         <br>
+         <table border=3>
+         <thead>
+            <tr>
+                 
+                <!-- colspan 3 colomns -->
+                 <th colspan= "3">airways</th>
+                <th colspan ="3" > railways</th>
+                <th colspan="3"> roadways</th>
+                </th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td>1 member</td>
+                <td>2 member</td>
+                <td>3 member</td>
+                <td>1 member</td>
+                <td>2 member</td>
+                <td>3 member</td>
+                <td>1 member</td>
+                <td>2 member</td>
+                <td>3 member</td>
+            </tr>
+            <tr>
+                <td>30k </td>
+                <td>40k</td>
+                <td>50k</td> 
+                <td>5k</td>
+                <td>7k</td>
+                <td>10k</td>
+                <td>10k</td>
+                <td>15k</td>
+                <td>20k</td>
+            </tr>
+            </tbody>
+         </table>
+         </main>
+         <table border="3">
+         <thead>
+        <div>with child</div>
+        <tr>
+              <th colspan="3">airways</th>
+              <th colspan="3">railways</th>
+              <th colspan="3">roadways</th>
+        </tr>
+    </thead>
+    <tbody>
+        <td>40k</td>
+        <td>50k</td>
+        <td>60k</td>
+        <td>7k</td>
+        <td>10k</td>
+        <td>15k</td>
+        <td>20k</td>
+        <td>25k</td>
+        <td>30k</td>
+    </tbody>
+</table>
+<li>
+<a href="https://en.wikipedia.org/wiki/Vaishno_Devi">history of maa Vaishno_Devi temple</a>
+</li>
+<br>
+<li>
+<a href="https://www.irctc.co.in/nget/redirect?pnr=2108873329&service=PRS_MEAL_BOOKING">another way to book the ticket </a>
+</li>
+<br>
+<li>
+<a href="https://www.instagram.com/?hl=en">My experience</a>
+</li>
+</body>
+</html>
